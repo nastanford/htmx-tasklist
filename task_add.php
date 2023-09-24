@@ -7,7 +7,7 @@
           enctype="multipart/form-data"
           hx-swap="innerHTML"
           hx-target="#dump"
-          hx-post="/htmx-tasklist/api/act_insertTask.php">
+          hx-post="/htmx-tasklist/act_insertTask.php">
           <input type="hidden"
             name="is_completed"
             id="is_completed"
@@ -25,8 +25,8 @@
                 name="AddTask"
                 value=" + Add Task"
                 hx-trigger="click"
-                hx-target="#dump"
-                hx-post="/htmx-tasklist/api/act_insertTask.php" />
+                hx-target="#mainContent"
+                hx-post="/htmx-tasklist/act_insertTask.php" />
             </div>
           </div>
         </form>
