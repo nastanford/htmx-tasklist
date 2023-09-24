@@ -1,14 +1,13 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-12">
-      <div hx-select=".my-form">
-        <form method="post"
-          action="/myTasks/test.php"
-          class="my-form"
-          hx-boost="true"
-          hx-target="this"
-          hx-swap="outerHTML"
-          hx-trigger="change">
+      <div>
+        <form method="POST"
+          id="binaryForm"
+          enctype="multipart/form-data"
+          hx-swap="innerHTML"
+          hx-target="#dump"
+          hx-post="/htmx-tasklist/api/act_insertTask.php">
           <input type="hidden"
             name="is_completed"
             id="is_completed"
@@ -20,16 +19,18 @@
                 id="task"
                 class="border-2 border-primary rounded"
                 placeholder="Enter Task">
-              <input type="submit"
+              <input type="button"
                 class="btn btn-sm btn-primary ms-2"
                 id="addTask"
                 name="AddTask"
-                value=" + Add Task" />
+                value=" + Add Task"
+                hx-trigger="click"
+                hx-target="#dump"
+                hx-post="/htmx-tasklist/api/act_insertTask.php" />
             </div>
           </div>
         </form>
       </div>
     </div>
   </div>
-
 </div>

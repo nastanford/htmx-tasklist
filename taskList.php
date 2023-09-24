@@ -41,5 +41,6 @@ include 'qry_tasks.php';
     </table>
   </div>
 </div>
+<div id="dump"></div>
 <?php
 include 'task_add.php';
