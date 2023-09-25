@@ -25,7 +25,7 @@ include 'qry_tasks.php';
           echo htmlspecialchars($row['task']);
           echo '</td><td>';
           if ($row['is_completed'] == 1) {
-            echo '<strong>Yes</strong>';
+            echo '<h4>Yes</h4>';
           } else {
             echo 'No';
           }
@@ -33,7 +33,7 @@ include 'qry_tasks.php';
           echo '</td></tr>';
         }
       } else {
-        echo '<tr><td>';
+        echo '<tr><td colspan="2">';
         echo "No tasks found.";
         echo '</td></tr>';
       }
@@ -41,6 +41,5 @@ include 'qry_tasks.php';
     </table>
   </div>
 </div>
-<div id="dump"></div>
 <?php
 include 'task_add.php';

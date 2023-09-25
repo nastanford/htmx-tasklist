@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand-lg bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand text-white"
-        href="#">Nathan</a>
+        href="#">HTMX Examples</a>
       <button class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -34,7 +34,7 @@
               aria-current="page"
               hx-post="/htmx-tasklist//taskList.php"
               hx-trigger="click"
-              hx-target="#mainContent">Home</a>
+              hx-target="#mainContent">Task List</a>
           </li>
         </ul>
       </div>

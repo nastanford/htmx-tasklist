@@ -6,7 +6,7 @@
           id="binaryForm"
           enctype="multipart/form-data"
           hx-swap="innerHTML"
-          hx-target="#dump"
+          hx-target="#mainContent"
           hx-post="/htmx-tasklist/act_insertTask.php">
           <input type="hidden"
             name="is_completed"
