@@ -20,7 +20,7 @@
                 class="border-2 border-primary rounded"
                 placeholder="Enter Task">
               <input type="button"
-                class="btn btn-sm btn-primary ms-2"
+                class="btn btn-sm btn-primary ms-2 fw-bold"
                 id="addTask"
                 name="AddTask"
                 value=" + Add Task"
